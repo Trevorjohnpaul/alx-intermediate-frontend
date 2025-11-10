@@ -1,1 +1,15 @@
 /*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
+.grid {
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.text-center {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
